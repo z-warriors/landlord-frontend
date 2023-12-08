@@ -1,12 +1,14 @@
 
+import { ThemeProvider } from '@mui/material/styles';
+import {theme} from "./style/theme.js";
 
 function App() {
 
   return (
     <>
-      <div>
+        <ThemeProvider theme={theme}>
           <>Hello</>
-      </div>
+        </ThemeProvider>
     </>
   )
 }
