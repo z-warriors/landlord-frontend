@@ -1,6 +1,7 @@
 
 import { ThemeProvider } from '@mui/material/styles';
 import {theme} from "./style/theme.js";
+import {Button} from "./elements/Button";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
         <ThemeProvider theme={theme}>
           <>Hello</>
+            <Button>Submit</Button>
         </ThemeProvider>
     </>
   )
