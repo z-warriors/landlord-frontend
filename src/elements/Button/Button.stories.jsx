@@ -13,3 +13,22 @@ export const PrimaryButton = {
         </>
     )
 };
+
+export const SecondaryButton = {
+    render: () => (
+        <>
+            <Typography>Secondary</Typography>
+            <Button variant="text">Add Landlord</Button>
+        </>
+    )
+};
+
+
+export const ComtainedDisabled = {
+    render: () => (
+        <>
+            <Typography>Secondary</Typography>
+            <Button variant="contained" disabled>Add Landlord</Button>
+        </>
+    )
+};
