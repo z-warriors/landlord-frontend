@@ -3,14 +3,19 @@ import {COLORS} from "../../style/theme";
 
 
 export const StyledTextField = styled(TextField)`
-  width: 400px;
   height: 0.75rem;
   border-radius: 5rem;
-  & .MuiOutlinedInput-root': {
-    border-radius: 15px;
+
+  & .MuiOutlinedInput-root {
+    border-radius: 3.125rem;
   }
+
   padding: ${({ theme }) => theme.spacing(0, 5)};
 
+  & .MuiInputBase-root {
+    border-radius: 150px;
+    width: ${({ width }) => width};
+  }
 
   &.Mui-disabled {
     ${({ disabled, variant }) => {
@@ -25,4 +30,5 @@ export const StyledTextField = styled(TextField)`
       return null;
     }}
   }
-`
+`;
+
