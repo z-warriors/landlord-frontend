@@ -28,7 +28,7 @@ export const NumberInput = {
   render: () => (
     <>
       <Typography>Number Input</Typography>
-      <TextField variant="number" placeholder="+(XX) XX XX XX XX" />
+      <TextField type="text" placeholder="+(XX) XX XX XX XX" />
     </>
   ),
 };
@@ -36,7 +36,7 @@ export const DateInput = {
   render: () => (
     <>
       <Typography>Date Input</Typography>
-      <TextField variant="text" />
+      <TextField type="text" />
     </>
   ),
 };
@@ -44,16 +44,16 @@ export const SearchInput = {
   render: () => (
     <>
       <Typography>Search Input</Typography>
-      <TextField variant="text" />
+      <TextField type="text" variant="text" />
     </>
   ),
 };
 
-export const ComtainedDisabled = {
+export const ContainedDisabled = {
   render: () => (
     <>
       <Typography>Secondary</Typography>
-      <TextField variant="contained" disabled>
+      <TextField type="text" variant="contained" disabled>
         Add Landlord
       </TextField>
     </>
