@@ -1,6 +1,5 @@
-import {TextField, styled} from "@mui/material"
-import {COLORS} from "../../style/theme";
-
+import { TextField, styled } from "@mui/material";
+import { COLORS } from "../../style/theme";
 
 export const StyledTextField = styled(TextField)`
   height: 0.75rem;
@@ -10,7 +9,7 @@ export const StyledTextField = styled(TextField)`
     border-radius: 3.125rem;
   }
 
-  padding: ${({ theme }) => theme.spacing(0, 5)};
+  padding: ${({ theme }) => theme.spacing(10, 5)};
 
   & .MuiInputBase-root {
     border-radius: 150px;
@@ -20,10 +19,10 @@ export const StyledTextField = styled(TextField)`
   &.Mui-disabled {
     ${({ disabled, variant }) => {
       if (disabled) {
-        if (variant === 'outlined') {
+        if (variant === "outlined") {
           return `color: ${COLORS.GREY_2}`;
         }
-        if (variant === 'contained') {
+        if (variant === "contained") {
           return `background-color: ${COLORS.GREY_4}; color: ${COLORS.GREY_2}`;
         }
       }
@@ -31,4 +30,3 @@ export const StyledTextField = styled(TextField)`
     }}
   }
 `;
-
