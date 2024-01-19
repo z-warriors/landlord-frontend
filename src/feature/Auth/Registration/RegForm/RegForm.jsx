@@ -19,7 +19,6 @@ const RegForm = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12}>
             <TextField
-              autoComplete="full-name"
               placeholder="Enter Full Name"
               name="name"
               fullWidth
@@ -51,10 +50,11 @@ const RegForm = () => {
               gap={5}
               justifyContent={"center"}
               alignContent={"center"}
-              m={10}
+              mt={5}
+              mx={4}
             >
-              <StyledButton variant="contained">Back</StyledButton>
-              <StyledButton variant="contained">Next</StyledButton>
+              <StyledButton variant="contained" fullWidth>Back</StyledButton>
+              <StyledButton variant="contained" fullWidth>Next</StyledButton>
             </Stack>
           </Grid>
         </Grid>
