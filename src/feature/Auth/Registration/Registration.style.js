@@ -8,7 +8,7 @@ export const StyledContainer = styled(muiContainer)`
   margin: 0;
   width: 100%;
   height: 100vh;
-  background: blue;
+  background: #fff;
 `;
 export const StyledFormContainer = styled(muiContainer)`
   display: flex;
